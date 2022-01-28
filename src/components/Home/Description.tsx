@@ -38,7 +38,7 @@ const Description = (): JSX.Element => {
             </span>,
             melhorando também o relacionamento com o cliente.
           </Text>
-          <Image src="/images/home.svg" w="60%" />
+          <Image src="/images/home.svg" w="60%" alt="Home description representation image" />
         </Flex>
       </Flex>
     </Flex>

@@ -7,7 +7,7 @@ const HomePage = (): JSX.Element => {
   return (
     <>
       <chakra.h2
-        w="80%"
+        w="90%"
         display="flex"
         bg="#34b4ac"
         justifyContent="flex-end"
@@ -15,6 +15,7 @@ const HomePage = (): JSX.Element => {
         color="#fff"
         px={8}
         py={2}
+        letterSpacing={4}
       >
         <Text>FEITO POR BRASILEIROS</Text> <Circle /> <Text fontWeight="bold">100% EM PORTUGUÊS</Text>
       </chakra.h2>

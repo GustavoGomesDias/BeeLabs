@@ -10,7 +10,7 @@ const About = (): JSX.Element => {
       <Flex
         justifyContent="center"
         flexDir="column"
-        w="80%"
+        w="90%"
         mt="4%"
         bg="#34b4ac"
         px={10}
