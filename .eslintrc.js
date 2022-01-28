@@ -28,5 +28,8 @@ module.exports = {
     'import/no-unresolved': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': 'off',
+    'arrow-body-style': 'off',
+    'no-undef': 'off',
+    'react/jsx-one-expression-per-line': 'off',
   },
 };
