@@ -23,7 +23,7 @@ const SectionTwo = (): JSX.Element => {
       </Flex>
       <Flex flexDir="column">
         <Button
-          size="md"
+          size="lg"
           borderRadius="0px"
           fontWeight="medium"
           px="2em"

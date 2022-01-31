@@ -25,7 +25,7 @@ const SectionOne = (): JSX.Element => {
         </Grid>
       </Flex>
       <Button
-        size="md"
+        size="lg"
         borderRadius="0px"
         fontWeight="medium"
         px="2em"
