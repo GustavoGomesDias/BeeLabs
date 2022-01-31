@@ -6,6 +6,7 @@ import SectionOne from '../components/Product/SectionOne';
 import Contact from '../components/Contact/Contact';
 import SectionTwo from '../components/Product/SectionTwo';
 import SectionThree from '../components/Product/SectionThree';
+import Footer from '../components/Footer/Footer';
 
 const Home = (): JSX.Element => {
   return (
@@ -17,6 +18,7 @@ const Home = (): JSX.Element => {
       <Contact />
       <SectionTwo />
       <SectionThree />
+      <Footer />
     </>
   );
 };
