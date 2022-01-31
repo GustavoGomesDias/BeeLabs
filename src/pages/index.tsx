@@ -5,6 +5,7 @@ import About from '../components/About/About';
 import SectionOne from '../components/Product/SectionOne';
 import Contact from '../components/Contact/Contact';
 import SectionTwo from '../components/Product/SectionTwo';
+import SectionThree from '../components/Product/SectionThree';
 
 const Home = (): JSX.Element => {
   return (
@@ -15,6 +16,7 @@ const Home = (): JSX.Element => {
       <SectionOne />
       <Contact />
       <SectionTwo />
+      <SectionThree />
     </>
   );
 };
