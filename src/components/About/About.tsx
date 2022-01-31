@@ -17,8 +17,8 @@ const About = (): JSX.Element => {
         w="90%"
         mt="4%"
         bg="#34b4ac"
-        px={4}
-        py={6}
+        px={isSmallScreen ? 4 : 10}
+        py={isSmallScreen ? 6 : 10}
       >
         <chakra.h1
           fontSize={isSmallScreen ? '24px' : '48px'}
@@ -27,7 +27,7 @@ const About = (): JSX.Element => {
         >
           MAIS DE 5.000 CLIENTES ATIVOS
         </chakra.h1>
-        <Text fontSize="18px" color="#fff" mt="5px">
+        <Text fontSize={isSmallScreen ? '18px' : '30px'} color="#fff" mt="5px">
           E NÃO IMPORTA O TAMANHO DA SUA EMPRESA.<br />
           OS PLANOS BEE CRM SÃO PERSONALIZADOS E SOB MEDIDA.
         </Text>
