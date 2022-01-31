@@ -1,12 +1,19 @@
+import { useMediaQuery } from '@chakra-ui/react';
 import React from 'react';
 
-const Circle = () => {
+export interface CircleProps {
+  borderRadius: string
+  width: string
+}
+
+const Circle = ({ borderRadius, width }: CircleProps) => {
+  const [isSmallScreen] = useMediaQuery('(max-width: 768px)');
   return (
     <span style={{
-      borderRadius: '50%',
+      borderRadius,
       display: 'block',
-      height: '10px',
-      width: '10px',
+      height: isSmallScreen ? '20px' : width,
+      width,
       background: '#fff',
       marginTop: 'auto',
       marginBottom: 'auto',

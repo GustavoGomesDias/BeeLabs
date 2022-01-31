@@ -1,9 +1,11 @@
 import React from 'react';
 import {
-  chakra, Flex, Image, Text,
+  chakra, Flex, Image, Text, useMediaQuery,
 } from '@chakra-ui/react';
 
 const Description = (): JSX.Element => {
+  const [isSmallScreen] = useMediaQuery('(max-width: 768px)');
+
   return (
     <Flex
       justifyContent="center"
@@ -15,20 +17,22 @@ const Description = (): JSX.Element => {
       <Flex
         justifyContent="center"
         flexDir="column"
-        w="66%"
+        w={isSmallScreen ? '90%' : '66%'}
       >
         <chakra.h1
-          fontSize="48px"
+          fontSize={isSmallScreen ? '24px' : '48px'}
           color="#042454"
           fontWeight="bold"
-          w="60%"
+          w={isSmallScreen ? '100%' : '60%'}
+          textAlign={isSmallScreen ? 'center' : 'left'}
         >
           VENDAS QUE RENDEM MUITO MAI$
         </chakra.h1>
         <Flex
           w="full"
+          flexDir={isSmallScreen ? 'column' : 'row'}
         >
-          <Text w="100%" fontSize="24px">
+          <Text w="100%" fontSize={isSmallScreen ? '16px' : '24px'} textAlign={isSmallScreen ? 'center' : 'left'} mt="2px">
             Sua estratégia de marketing começa e continua com Bee CRM.
             Aqui você conta com
             <span style={{
@@ -38,7 +42,7 @@ const Description = (): JSX.Element => {
             </span>,
             melhorando também o relacionamento com o cliente.
           </Text>
-          <Image src="/images/home.svg" w="60%" alt="Home description representation image" />
+          <Image src="/images/home.svg" w={isSmallScreen ? '100%' : '60%'} alt="Home description representation image" />
         </Flex>
       </Flex>
     </Flex>

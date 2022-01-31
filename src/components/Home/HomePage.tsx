@@ -1,9 +1,11 @@
 import React from 'react';
-import { chakra, Text } from '@chakra-ui/react';
+import { chakra, Text, useMediaQuery } from '@chakra-ui/react';
 import Circle from '../Circle/Circle';
 import Description from './Description';
 
 const HomePage = (): JSX.Element => {
+  const [isSmallScreen] = useMediaQuery('(max-width: 768px)');
+
   return (
     <>
       <chakra.h2
@@ -11,13 +13,16 @@ const HomePage = (): JSX.Element => {
         display="flex"
         bg="#34b4ac"
         justifyContent="flex-end"
-        fontSize="36px"
+        fontSize={isSmallScreen ? '20px' : '36px'}
         color="#fff"
-        px={8}
+        px={isSmallScreen ? 4 : 8}
         py={2}
         letterSpacing={4}
       >
-        <Text>FEITO POR BRASILEIROS</Text> <Circle /> <Text fontWeight="bold">100% EM PORTUGUÊS</Text>
+        <Text textAlign="right">FEITO POR BRASILEIROS</Text> <Circle
+          borderRadius={isSmallScreen ? '' : '50%'}
+          width={isSmallScreen ? '1px' : '10px'}
+        /> <Text fontWeight="bold">100% EM PORTUGUÊS</Text>
       </chakra.h2>
       <Description />
     </>

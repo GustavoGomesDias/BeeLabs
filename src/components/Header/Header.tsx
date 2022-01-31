@@ -11,7 +11,7 @@ const Header = (): JSX.Element => {
       alignItems="center"
       justifyContent="space-between"
       w="100%"
-      p={isSmallScreen ? 4 : 8}
+      p={isSmallScreen ? 2 : 8}
     >
       <Image ml={isSmallScreen ? '2%' : '10%'} src="/images/logo.svg" w="30%" h="20%" alt="Bee CMR logo" />
       <ButtonGroup px={2} display="flex" justifyContent="flex-end">
