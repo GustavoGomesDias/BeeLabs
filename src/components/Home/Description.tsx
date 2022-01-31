@@ -32,7 +32,7 @@ const Description = (): JSX.Element => {
             Sua estratégia de marketing começa e continua com Bee CRM.
             Aqui você conta com
             <span style={{
-              fontWeight: 'bold',
+              fontWeight: 'bold', color: 'black',
             }}
             > muito mais eficiência desde o primeiro contato à conclusão das vendas
             </span>,

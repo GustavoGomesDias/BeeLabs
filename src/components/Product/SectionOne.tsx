@@ -11,16 +11,16 @@ const SectionOne = (): JSX.Element => {
         <Image w="60%" src="/images/secOne.svg" alt="Product description representation image" />
         <Grid templateRows="repeat(5, 0.5fr)" gap={2} ml="1em">
           <Text fontSize="24px" mt="1.8em">
-            CONHEÇA seu <span style={{ fontWeight: 'bold' }}> público </span>
+            CONHEÇA seu <span style={{ fontWeight: 'bold', color: 'black' }}> público </span>
           </Text>
           <Text fontSize="24px">
-            ACOMPANHE suas <span style={{ fontWeight: 'bold' }}> vendas</span> em <span style={{ fontWeight: 'bold' }}> qualquer lugar</span>
+            ACOMPANHE suas <span style={{ fontWeight: 'bold', color: 'black' }}> vendas</span> em <span style={{ fontWeight: 'bold' }}> qualquer lugar</span>
           </Text>
           <Text fontSize="24px">
-            VENDAS online com <span style={{ fontWeight: 'bold' }}> eficiência máxixa</span>
+            VENDAS online com <span style={{ fontWeight: 'bold', color: 'black' }}> eficiência máxixa</span>
           </Text>
           <Text fontSize="24px">
-            FIDELIZE clientes com <span style={{ fontWeight: 'bold' }}> insights preciosos</span>
+            FIDELIZE clientes com <span style={{ fontWeight: 'bold', color: 'black' }}> insights preciosos</span>
           </Text>
         </Grid>
       </Flex>
