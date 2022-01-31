@@ -32,7 +32,7 @@ const Description = (): JSX.Element => {
           w="full"
           flexDir={isSmallScreen ? 'column' : 'row'}
         >
-          <Text w="100%" fontSize={isSmallScreen ? '16px' : '24px'} textAlign={isSmallScreen ? 'center' : 'left'} mt="2px">
+          <Text w="100%" fontSize={isSmallScreen ? '18px' : '24px'} textAlign={isSmallScreen ? 'center' : 'left'} mt="2px">
             Sua estratégia de marketing começa e continua com Bee CRM.
             Aqui você conta com
             <span style={{
