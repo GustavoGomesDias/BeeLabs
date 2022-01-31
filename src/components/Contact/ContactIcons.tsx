@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Text, useMediaQuery } from '@chakra-ui/react';
 import { IconType } from 'react-icons';
 
 export interface ContactIconsProps {
@@ -8,10 +8,12 @@ export interface ContactIconsProps {
   border: boolean
 }
 const ContactIcons = ({ Icon, border, text }: ContactIconsProps): JSX.Element => {
+  const [isSmallScreen] = useMediaQuery('(max-width: 768px)');
+
   return (
-    <Flex flexDir="column" alignItems="center" p="2em" borderLeft={border ? '2px solid #34b4ac' : 'none'} w="100%">
-      <Icon color="#34b4ac" size="45px" />
-      <Text color="#fff" w="full" textAlign="center" mt="5px">{text}</Text>
+    <Flex flexDir={isSmallScreen ? 'unset' : 'column'} alignItems="center" p="1em" borderLeft={border ? '2px solid #34b4ac' : 'none'} w="100%">
+      <Icon color="#34b4ac" size={isSmallScreen ? '26px' : '45px'} />
+      <Text ml={isSmallScreen ? '15px' : 'unset'} color="#fff" w="full" textAlign={isSmallScreen ? 'unset' : 'center'} mt="5px" fontSize={isSmallScreen ? '16px' : ''}>{text}</Text>
     </Flex>
   );
 };
