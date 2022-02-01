@@ -36,12 +36,12 @@ const Footer = (): JSX.Element => {
             <Link href="/"><FiPhoneCall color="#fff" size={mediasSize} /></Link>
           </Grid>
         </Flex>
-        <Flex>
-          <Link href="/" color="#fff" fontSize={linkSize}>Termos de serviço</Link>
-          <Link href="/" color="#fff" fontSize={linkSize} mx="15px">Políticas de Privacidade</Link>
-          <Link href="/" color="#fff" fontSize={linkSize}>Gerenciar cookies</Link>
+        <Flex justifyContent="center">
+          <Link href="/" color="#fff" fontSize={linkSize} textAlign="center">Termos de serviço</Link>
+          <Link href="/" color="#fff" fontSize={linkSize} textAlign="center" mx="15px">Políticas de Privacidade</Link>
+          <Link href="/" color="#fff" fontSize={linkSize} textAlign="center">Gerenciar cookies</Link>
         </Flex>
-        <Text color="#fff" fontSize="12px">Copyright © 2022 Bee crm. Todos os direitos reservados. Feito por <Link href="https://www.artcom.com.br" isExternal color="#fff">Artcom</Link></Text>
+        <Text color="#fff" fontSize="12px" textAlign="center">Copyright © 2022 Bee crm. Todos os direitos reservados. Feito por <Link href="https://www.artcom.com.br" isExternal color="#fff">Artcom</Link></Text>
       </Flex>
     </Flex>
   );
