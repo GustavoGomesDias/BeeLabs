@@ -20,33 +20,41 @@ const SectionOne = (): JSX.Element => {
         )}
         <Grid templateRows="repeat(5, 0.5fr)" gap={2} ml="1em">
           <Flex alignItems="center" mt="1.8em">
-            <Flex mr="15px">
-              <FaCheck size="20px" color="#34b4ac" />
-            </Flex>
+            {isSmallScreen && (
+              <Flex mr="15px">
+                <FaCheck size="20px" color="#34b4ac" style={{ marginRight: '5px' }} />
+              </Flex>
+            )}
             <Text fontSize={isSmallScreen ? '18px' : '24px'}>
               CONHEÇA seu <span style={{ fontWeight: 'bold', color: 'black' }}> público</span>
             </Text>
           </Flex>
           <Flex alignItems="center">
-            <Flex mr="15px">
-              <FaCheck size="20px" color="#34b4ac" style={{ marginRight: '5px' }} />
-            </Flex>
+            {isSmallScreen && (
+              <Flex mr="15px">
+                <FaCheck size="20px" color="#34b4ac" style={{ marginRight: '5px' }} />
+              </Flex>
+            )}
             <Text fontSize={isSmallScreen ? '18px' : '24px'}>
               ACOMPANHE suas <span style={{ fontWeight: 'bold', color: 'black' }}> vendas</span> em <span style={{ fontWeight: 'bold', color: 'black' }}> qualquer lugar</span>
             </Text>
           </Flex>
           <Flex alignItems="center">
-            <Flex mr="15px">
-              <FaCheck size="20px" color="#34b4ac" style={{ marginRight: '5px' }} />
-            </Flex>
+            {isSmallScreen && (
+              <Flex mr="15px">
+                <FaCheck size="20px" color="#34b4ac" style={{ marginRight: '5px' }} />
+              </Flex>
+            )}
             <Text fontSize={isSmallScreen ? '18px' : '24px'}>
               VENDAS online com <span style={{ fontWeight: 'bold', color: 'black' }}> eficiência máxixa</span>
             </Text>
           </Flex>
           <Flex alignItems="center">
-            <Flex mr="15px">
-              <FaCheck size="20px" color="#34b4ac" style={{ marginRight: '5px' }} />
-            </Flex>
+            {isSmallScreen && (
+              <Flex mr="15px">
+                <FaCheck size="20px" color="#34b4ac" style={{ marginRight: '5px' }} />
+              </Flex>
+            )}
             <Text fontSize={isSmallScreen ? '18px' : '24px'}>
               FIDELIZE clientes com <span style={{ fontWeight: 'bold', color: 'black' }}> insights preciosos</span>
             </Text>
@@ -54,7 +62,7 @@ const SectionOne = (): JSX.Element => {
         </Grid>
       </Flex>
       <Button
-        size="lg"
+        size={isSmallScreen ? 'md' : 'lg'}
         borderRadius="0px"
         fontWeight="medium"
         px="2em"

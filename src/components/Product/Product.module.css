@@ -1,0 +1,71 @@
+.mobile::before {
+  content: 'Automatize tarefas cotidianas';
+  font-size: 24px;
+  animation-name: head;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.listSpan {
+  font-size: 24px;
+  height: 100%;
+  position: relative;
+  top: -5px;
+}
+
+.listMarker::marker {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+@keyframes head {
+  0% {
+    opacity:1;
+  }
+  10% {
+    opacity:0;
+  }
+  15% {
+    opacity:1;
+  }
+  20% {
+    content: 'Crie e organize módulos com facilide';
+  }
+  30% {
+    opacity:0;
+  }
+
+  35% {
+    opacity:1;
+  }
+  40% {
+    content: 'Configure as etapas de funil de vendas';
+  }
+  50% {
+    opacity:0;
+  }
+  55% {
+    opacity:1;
+  }
+  60% {
+    content: 'Comunicação rastreada';
+  }
+  70% {
+    opacity:0;
+  }
+  75% {
+    opacity:1;
+  }
+  80% {
+    content: 'Acompanhe o progresso de vendas em tempo real';
+  }
+  90% {
+    opacity:0;
+  }
+  95% {
+    opacity:1;
+  }
+  100% {
+    content: 'Automatize tarefas cotidianas';
+  }
+}

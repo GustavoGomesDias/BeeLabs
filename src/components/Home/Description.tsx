@@ -26,7 +26,7 @@ const Description = (): JSX.Element => {
           w={isSmallScreen ? '100%' : '60%'}
           textAlign={isSmallScreen ? 'center' : 'left'}
         >
-          VENDAS QUE RENDEM MUITO MAI$
+          VENDAS QUE RENDEM<br /> MUITO MAI$
         </chakra.h1>
         <Flex
           w="full"

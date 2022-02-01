@@ -14,7 +14,7 @@ const About = (): JSX.Element => {
       <Flex
         justifyContent="center"
         flexDir="column"
-        w="90%"
+        w={isSmallScreen ? '100%' : '90%'}
         mt="4%"
         bg="#34b4ac"
         px={isSmallScreen ? 4 : 10}
@@ -24,10 +24,11 @@ const About = (): JSX.Element => {
           fontSize={isSmallScreen ? '24px' : '48px'}
           color="#042454"
           fontWeight="extrabold"
+          textAlign={isSmallScreen ? 'center' : 'left'}
         >
           MAIS DE 5.000 CLIENTES ATIVOS
         </chakra.h1>
-        <Text fontSize={isSmallScreen ? '18px' : '30px'} color="#fff" mt="5px">
+        <Text fontSize={isSmallScreen ? '18px' : '30px'} color="#fff" mt="5px" textAlign={isSmallScreen ? 'center' : 'left'}>
           E NÃO IMPORTA O TAMANHO DA SUA EMPRESA.<br />
           OS PLANOS BEE CRM SÃO PERSONALIZADOS E SOB MEDIDA.
         </Text>
