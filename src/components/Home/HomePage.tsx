@@ -13,7 +13,7 @@ const HomePage = (): JSX.Element => {
         display="flex"
         bg="#34b4ac"
         justifyContent="flex-end"
-        fontSize={isSmallScreen ? '20px' : '36px'}
+        fontSize={isSmallScreen ? '18px' : '36px'}
         color="#fff"
         px={isSmallScreen ? 4 : 8}
         py={2}
@@ -21,7 +21,7 @@ const HomePage = (): JSX.Element => {
       >
         <Text textAlign="right">FEITO POR BRASILEIROS</Text> <Circle
           borderRadius={isSmallScreen ? '' : '50%'}
-          width={isSmallScreen ? '1px' : '10px'}
+          width={isSmallScreen ? '2px' : '10px'}
         /> <Text fontWeight="bold">100% EM PORTUGUÊS</Text>
       </chakra.h2>
       <Description />
