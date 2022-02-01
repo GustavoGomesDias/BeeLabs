@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  chakra, Flex, Grid, useMediaQuery,
+  chakra, Flex, Grid, useMediaQuery, Link,
 } from '@chakra-ui/react';
 import {
   FaWhatsapp, FaFacebookSquare, FaInstagramSquare,
@@ -19,11 +19,11 @@ const Contact = (): JSX.Element => {
         templateColumns={isSmallScreen ? '' : 'repeat(5, 0.7fr)'}
         templateRows={isSmallScreen ? 'repeat(5, 0.7fr)' : ''}
       >
-        <ContactIcons Icon={FaWhatsapp} text="WhatsApp" border={!!isSmallScreen} />
-        <ContactIcons Icon={FaFacebookSquare} text="Facebook Menssager" border />
-        <ContactIcons Icon={FiMail} text="E-mail" border />
-        <ContactIcons Icon={FaInstagramSquare} text="Instagram Direct" border />
-        <ContactIcons Icon={FiPhoneCall} text="Telefone" border />
+        <Link href="/"><ContactIcons Icon={FaWhatsapp} text="WhatsApp" border={!!isSmallScreen} /></Link>
+        <Link href="/"><ContactIcons Icon={FaFacebookSquare} text="Facebook Menssager" border /></Link>
+        <Link href="/"><ContactIcons Icon={FiMail} text="E-mail" border /></Link>
+        <Link href="/"><ContactIcons Icon={FaInstagramSquare} text="Instagram Direct" border /></Link>
+        <Link href="/"><ContactIcons Icon={FiPhoneCall} text="Telefone" border /></Link>
       </Grid>
     </Flex>
   );
