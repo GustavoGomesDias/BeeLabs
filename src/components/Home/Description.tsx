@@ -20,11 +20,12 @@ const Description = (): JSX.Element => {
         w={isSmallScreen ? '90%' : '66%'}
       >
         <chakra.h1
-          fontSize={isSmallScreen ? '24px' : '48px'}
+          fontSize={isSmallScreen ? '26px' : '48px'}
           color="#042454"
           fontWeight="bold"
           w={isSmallScreen ? '100%' : '60%'}
           textAlign={isSmallScreen ? 'center' : 'left'}
+          lineHeight={1.2}
         >
           VENDAS QUE RENDEM<br /> MUITO MAI$
         </chakra.h1>

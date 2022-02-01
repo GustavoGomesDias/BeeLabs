@@ -21,7 +21,7 @@ const About = (): JSX.Element => {
         py={isSmallScreen ? 6 : 10}
       >
         <chakra.h1
-          fontSize={isSmallScreen ? '24px' : '48px'}
+          fontSize={isSmallScreen ? '26px' : '48px'}
           color="#042454"
           fontWeight="extrabold"
           textAlign={isSmallScreen ? 'center' : 'left'}

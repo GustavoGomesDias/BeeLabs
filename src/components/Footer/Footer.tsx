@@ -9,12 +9,15 @@ import { FiMail, FiPhoneCall } from 'react-icons/fi';
 
 const Footer = (): JSX.Element => {
   return (
-    <Flex w="full" flexDir="column">
-      <Text textAlign="center">Uma empresa</Text>
+    <Flex w="full" flexDir="column" mt="3em">
+      <Flex alignItems="center" justifyContent="center">
+        <Text textAlign="center" fontWeight="bold" color="#888888" mr="5px">Uma empresa</Text>
+        <Image w="10%" src="/images/beelabs.svg" alt="Bee CMR logo" />
+      </Flex>
       <Flex py="2em" w="full" bg="#042454" alignItems="center" flexDir="column">
         <Flex w="100%" py="2em" px="8em">
-          <Image w="30%" src="/images/logo.svg" alt="Bee CMR logo" />
-          <Grid templateColumns="repeat(5, 0.7fr)" gap={2} display="flex" w="full" justifyContent="flex-end">
+          <Image w="30%" src="/images/footer-logo.svg" alt="Bee CMR logo" />
+          <Grid templateColumns="repeat(5, 0.7fr)" alignItems="center" gap={2} display="flex" w="full" justifyContent="flex-end">
             <FaWhatsapp color="#fff" size="45px" />
             <FaFacebookSquare color="#fff" size="40px" />
             <FiMail color="#fff" size="40px" />

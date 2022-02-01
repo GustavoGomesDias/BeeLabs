@@ -1,8 +1,12 @@
+.mobile {
+  text-align: center;
+  height: 50%;
+}
 .mobile::before {
   content: 'Automatize tarefas cotidianas';
   font-size: 24px;
   animation-name: head;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
 }
 
@@ -29,7 +33,7 @@
     opacity:1;
   }
   20% {
-    content: 'Crie e organize módulos com facilide';
+    content: 'Crie e organize módulos com facilidade';
   }
   30% {
     opacity:0;
