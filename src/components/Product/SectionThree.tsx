@@ -9,7 +9,7 @@ const SectionThree = (): JSX.Element => {
   return (
     <Flex w="full" alignItems="center" flexDir="column">
       <Flex w="full" bg="#34b4ac" flexDir="column">
-        <Flex flexDir="column" alignItems="center" w="full">
+        <Flex flexDir="column" alignItems="center" w="full" mt="5%">
           <chakra.h1 textAlign={isSmallScreen ? 'center' : 'unset'} fontSize={isSmallScreen ? '26px' : '48px'} fontWeight="bold" color="#042454">ANÁLISES INTELIGENTEMENTE SIMPLES</chakra.h1>
           <chakra.h3 textAlign={isSmallScreen ? 'center' : 'unset'} fontSize={isSmallScreen ? '24px' : '28px'} color="#fff">Um app que vive trabalhando para {isSmallScreen && <br />} você vender mais</chakra.h3>
         </Flex>
@@ -41,7 +41,7 @@ const SectionThree = (): JSX.Element => {
           Entre em contato
         </Text>
       </Button>
-      <Text fontSize="14px" textAlign="center" mt="0.5em">* Teste gratuito de 7 dias</Text>
+      <Text fontSize="14px" fontWeight="bold" textAlign="center" mt="0.5em">* Teste gratuito de 7 dias</Text>
     </Flex>
   );
 };

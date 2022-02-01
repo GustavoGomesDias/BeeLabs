@@ -33,7 +33,7 @@ const SectionTwo = (): JSX.Element => {
         >
           TENHO INTERESSE
         </Button>
-        <Text fontSize="14px" textAlign="center" mt="0.5em">* Teste gratuito de 7 dias</Text>
+        <Text fontSize="14px" textAlign="center" mt="0.5em" fontWeight="bold">* Teste gratuito de 7 dias</Text>
       </Flex>
       <Flex mt="2.5em" w="90%" flexDir={isSmallScreen ? 'column' : 'row'}>
         <Flex
@@ -51,7 +51,7 @@ const SectionTwo = (): JSX.Element => {
             textAlign="center"
             fontWeight="bold"
             w={isSmallScreen ? '80%' : '50%'}
-            mt="5%"
+            mt={isSmallScreen ? '10%' : '5%'}
             color="#042454"
           >
             TODOS OS DEPARTAMENTOS DA SUA EMPRESA CONECTADOS
@@ -72,7 +72,7 @@ const SectionTwo = (): JSX.Element => {
             textAlign="center"
             fontWeight="bold"
             w={isSmallScreen ? '80%' : '50%'}
-            mt="5%"
+            mt={isSmallScreen ? '10%' : '5%'}
             color="#fff"
           >
             TREINAMENTO COMPLETO E SUPORTE 24h

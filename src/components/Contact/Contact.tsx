@@ -13,7 +13,14 @@ const Contact = (): JSX.Element => {
 
   return (
     <Flex w="full" bg="#042454" py="2em" justifyContent="center" alignItems="center" my="2em" flexDir="column">
-      <chakra.h2 color="#fff" fontSize={isSmallScreen ? '26px' : '36px'} fontWeight="bold" textAlign={isSmallScreen ? 'center' : 'unset'}>O CRM IDEAL PARA TODAS AS PLATAFORMAS</chakra.h2>
+      <chakra.h2
+        color="#fff"
+        fontSize={isSmallScreen ? '26px' : '36px'}
+        fontWeight="bold"
+        textAlign={isSmallScreen ? 'center' : 'unset'}
+      >
+        O CRM IDEAL PARA {isSmallScreen && <br />} TODAS AS PLATAFORMAS
+      </chakra.h2>
       <Grid
         mt="5px"
         templateColumns={isSmallScreen ? '' : 'repeat(5, 0.7fr)'}
