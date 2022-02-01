@@ -15,7 +15,7 @@ const SectionThree = (): JSX.Element => {
         </Flex>
         <Flex w="full" justifyContent="center" alignItems="center" flexDir={isSmallScreen ? 'column' : 'row'}>
           <Image src="/images/secThree.svg" about="Spreadsheet representation" w={isSmallScreen ? '90%' : '40%'} />
-          <UnorderedList p="2em" fontSize="20px" w={isSmallScreen ? '100%' : '40%'} spacing={3} color="#fff" display="flex" flexDir="column" justifyContent="center">
+          <UnorderedList py={2} fontSize="20px" w={isSmallScreen ? '80%' : '40%'} spacing={3} color="#fff" display="flex" flexDir="column" justifyContent="center">
             <ListItem><span style={{ fontWeight: 'bold', color: 'black' }}>Relatórios</span> completos da atividade</ListItem>
             <ListItem><span style={{ fontWeight: 'bold', color: 'black' }}>Métricas</span> de desempenho</ListItem>
             <ListItem>Análise de <span style={{ fontWeight: 'bold', color: 'black' }}>tendências</span> (fale com a pessoa certa na hora certa)</ListItem>

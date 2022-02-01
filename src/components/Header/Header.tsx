@@ -16,7 +16,7 @@ const Header = (): JSX.Element => {
       overflowX="hidden"
     >
       <Image ml={isSmallScreen ? '0%' : '10%'} src="/images/logo.svg" w="30%" h="20%" alt="Bee CMR logo" />
-      <ButtonGroup px={2} display="flex" justifyContent="flex-end">
+      <ButtonGroup px={isSmallScreen ? 0 : 2} display="flex" justifyContent="flex-end">
         <Button size="xs" borderRadius="0px" variant="link">CONTATO</Button>
         <Button size="xs" borderRadius="0px" borderWidth="1px" borderColor="#34b4ac" bg="#fff">LOGIN</Button>
         <Button size="xs" borderRadius="0px" borderWidth="1px" borderColor="#34b4ac" bg="#fff">TESTE GRÁTIS</Button>
