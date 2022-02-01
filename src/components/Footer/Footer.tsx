@@ -11,7 +11,7 @@ const Footer = (): JSX.Element => {
   const [isSmallScreen] = useMediaQuery('(max-width: 768px)');
 
   const mediasSize: string = isSmallScreen ? '20px' : '40px';
-  const linkSize: string = isSmallScreen ? '14px' : '16px';
+  const linkSize: string = isSmallScreen ? '12px' : '16px';
 
   return (
     <Flex w="full" flexDir="column" mt="3em">
@@ -36,7 +36,7 @@ const Footer = (): JSX.Element => {
             <Link href="/"><FiPhoneCall color="#fff" size={mediasSize} /></Link>
           </Grid>
         </Flex>
-        <Flex justifyContent="center">
+        <Flex justifyContent="center" mb="2px">
           <Link href="/" color="#fff" fontSize={linkSize} textAlign="center">Termos de serviço</Link>
           <Link href="/" color="#fff" fontSize={linkSize} textAlign="center" mx="15px">Políticas de Privacidade</Link>
           <Link href="/" color="#fff" fontSize={linkSize} textAlign="center">Gerenciar cookies</Link>
