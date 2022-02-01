@@ -50,7 +50,7 @@ const SectionTwo = (): JSX.Element => {
             fontSize={isSmallScreen ? '20px' : '30px'}
             textAlign="center"
             fontWeight="bold"
-            w="50%"
+            w={isSmallScreen ? '80%' : '50%'}
             mt="5%"
             color="#042454"
           >
@@ -67,7 +67,16 @@ const SectionTwo = (): JSX.Element => {
           h={isSmallScreen ? '400px' : '600px'}
           mt={isSmallScreen ? '10%' : 'none'}
         >
-          <Text fontSize={isSmallScreen ? '20px' : '30px'} textAlign="center" fontWeight="bold" w="50%" mt="5%" color="#fff">TREINAMENTO COMPLETO E SUPORTE 24h</Text>
+          <Text
+            fontSize={isSmallScreen ? '20px' : '30px'}
+            textAlign="center"
+            fontWeight="bold"
+            w={isSmallScreen ? '80%' : '50%'}
+            mt="5%"
+            color="#fff"
+          >
+            TREINAMENTO COMPLETO E SUPORTE 24h
+          </Text>
         </Flex>
       </Flex>
     </Flex>
