@@ -36,7 +36,7 @@ const SectionTwo = (): JSX.Element => {
         </Button>
         <Text fontSize="14px" textAlign="center" mt="0.5em" fontWeight="bold">* Teste gratuito de 7 dias</Text>
       </Flex>
-      <Flex mt="2.5em" w="90%" flexDir={isSmallScreen ? 'column' : 'row'}>
+      <Flex mt="2.5em" w="90%" flexDir={isSmallScreen || isMdScreen ? 'column' : 'row'}>
         <Flex
           w="100%"
           justifyContent="center"
@@ -66,7 +66,7 @@ const SectionTwo = (): JSX.Element => {
           bgPos="center"
           bgRepeat="no-repeat"
           h={isSmallScreen ? '400px' : '600px'}
-          mt={isSmallScreen ? '10%' : 'none'}
+          mt={isSmallScreen || isMdScreen ? '10%' : 'none'}
         >
           <Text
             fontSize={isSmallScreen ? '20px' : '30px'}
