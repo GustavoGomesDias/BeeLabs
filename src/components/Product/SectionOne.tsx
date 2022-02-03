@@ -11,7 +11,6 @@ const SectionOne = (): JSX.Element => {
   const [isLargeScreen] = useMediaQuery('(min-width: 1200px)');
   const rows = isLargeScreen ? 6 : 5;
 
-
   return (
     <Flex w="100%" justifyContent="center" flexDir="column" alignItems="center" mb="5px">
       <Flex w={isMdScreen && !isSmallScreen ? '90%' : '70%'}>
