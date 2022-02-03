@@ -10,8 +10,8 @@ const SectionThree = (): JSX.Element => {
     <Flex w="full" alignItems="center" flexDir="column">
       <Flex w="full" bg="#34b4ac" flexDir="column">
         <Flex flexDir="column" alignItems="center" w="full" mt="5%">
-          <chakra.h1 textAlign={isSmallScreen ? 'center' : 'unset'} fontSize={isSmallScreen ? '26px' : '48px'} fontWeight="bold" color="#042454">ANÁLISES INTELIGENTEMENTE SIMPLES</chakra.h1>
-          <chakra.h3 textAlign={isSmallScreen ? 'center' : 'unset'} fontSize={isSmallScreen ? '24px' : '28px'} color="#fff">Um app que vive trabalhando para {isSmallScreen && <br />} você vender mais</chakra.h3>
+          <chakra.h1 p={0.5} textAlign={isSmallScreen ? 'center' : 'unset'} fontSize={isSmallScreen ? '26px' : '48px'} fontWeight="bold" color="#042454">ANÁLISES INTELIGENTEMENTE SIMPLES</chakra.h1>
+          <chakra.h3 textAlign={isSmallScreen ? 'center' : 'unset'} fontSize={isSmallScreen ? '24px' : '28px'} color="#fff">Um app que vive trabalhando {isSmallScreen && <br />} para você vender mais</chakra.h3>
         </Flex>
         <Flex w="full" justifyContent="center" alignItems="center" flexDir={isSmallScreen ? 'column' : 'row'}>
           <Image src="/images/secThree.svg" about="Spreadsheet representation" w={isSmallScreen ? '90%' : '40%'} />

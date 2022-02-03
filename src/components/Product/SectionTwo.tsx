@@ -8,16 +8,17 @@ import AnimationTxt from './AnimationTxt';
 
 const SectionTwo = (): JSX.Element => {
   const [isSmallScreen] = useMediaQuery('(max-width: 768px)');
+  const [isMdScreen] = useMediaQuery('(max-width: 960px)');
 
   return (
     <Flex w="full" justifyContent="center" p="1em" flexDir="column" alignItems="center">
-      <Flex w={isSmallScreen ? '100%' : '90%'} justifyContent="center" flexDir={isSmallScreen ? 'column' : 'row'}>
-        <Flex w={isSmallScreen ? '100%' : '40%'} flexDir="column" lineHeight={1.2}>
-          <chakra.h1 textAlign={isSmallScreen ? 'center' : 'unset'} fontSize={isSmallScreen ? '26px' : '48px'} color="#042454" fontWeight="bold">CONTROLE A EQUIPE. <br /> MELHORE A GESTÃO.</chakra.h1>
-          <chakra.h3 textAlign={isSmallScreen ? 'center' : 'unset'} fontSize={isSmallScreen ? '24px' : '36px'} color="#4d4d4d" fontWeight="bold">Conte com um sistema intuitivo e fácil de usar</chakra.h3>
+      <Flex w={isSmallScreen || isMdScreen ? '100%' : '90%'} justifyContent="center" flexDir={isSmallScreen || isMdScreen ? 'column' : 'row'}>
+        <Flex w={isSmallScreen || isMdScreen ? '100%' : '40%'} flexDir="column" lineHeight={1.2}>
+          <chakra.h1 textAlign={isSmallScreen || isMdScreen ? 'center' : 'unset'} fontSize={isSmallScreen || isMdScreen ? '26px' : '48px'} color="#042454" fontWeight="bold">CONTROLE A EQUIPE. <br /> MELHORE A GESTÃO.</chakra.h1>
+          <chakra.h3 textAlign={isSmallScreen || isMdScreen ? 'center' : 'unset'} fontSize={isSmallScreen || isMdScreen ? '24px' : '36px'} color="#4d4d4d" fontWeight="bold">Conte com um sistema intuitivo e fácil de usar</chakra.h3>
         </Flex>
 
-        {isSmallScreen ? <AnimationTxt /> : <SecTwoList />}
+        {isSmallScreen || isMdScreen ? <AnimationTxt /> : <SecTwoList />}
       </Flex>
       <Flex flexDir="column" my="2.5em">
         <Button

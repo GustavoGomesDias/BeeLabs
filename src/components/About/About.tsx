@@ -26,10 +26,10 @@ const About = (): JSX.Element => {
           fontWeight="extrabold"
           textAlign={isSmallScreen ? 'center' : 'left'}
         >
-          MAIS DE 5.000 CLIENTES ATIVOS
+          MAIS DE 5.000 {isSmallScreen && <br />}CLIENTES ATIVOS
         </chakra.h1>
         <Text fontSize={isSmallScreen ? '18px' : '30px'} color="#fff" mt="5px" textAlign={isSmallScreen ? 'center' : 'left'}>
-          E NÃO IMPORTA O TAMANHO DA SUA EMPRESA.<br />
+          E NÃO IMPORTA {isSmallScreen && <br />}O TAMANHODA SUA EMPRESA.<br />
           OS PLANOS BEE CRM SÃO PERSONALIZADOS E SOB MEDIDA.
         </Text>
       </Flex>

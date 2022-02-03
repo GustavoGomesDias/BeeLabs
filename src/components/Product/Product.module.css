@@ -4,7 +4,7 @@
 }
 .mobile::before {
   content: 'Automatize tarefas cotidianas';
-  font-size: 24px;
+  font-size: 20px;
   animation-name: head;
   animation-duration: 15s;
   animation-iteration-count: infinite;
