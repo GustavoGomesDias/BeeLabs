@@ -17,7 +17,7 @@ const Contact = (): JSX.Element => {
         color="#fff"
         fontSize={isSmallScreen ? '26px' : '36px'}
         fontWeight="bold"
-        textAlign={isSmallScreen ? 'center' : 'unset'}
+        textAlign={isSmallScreen ? 'center' : 'center'}
       >
         O CRM IDEAL PARA {isSmallScreen && <br />} TODAS AS PLATAFORMAS
       </chakra.h2>
