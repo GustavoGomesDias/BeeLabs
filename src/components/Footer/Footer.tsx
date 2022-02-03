@@ -28,7 +28,15 @@ const Footer = (): JSX.Element => {
           alignItems={isSmallScreen ? 'center' : 'unset'}
         >
           <Image w={isSmallScreen ? '50%' : '30%'} src="/images/footer-logo.svg" alt="Bee CMR logo" />
-          <Grid templateColumns="repeat(5, 0.7fr)" alignItems="center" gap={2} display="flex" w="full" justifyContent={isSmallScreen ? 'center' : 'flex-end'}>
+          <Grid
+            templateColumns="repeat(5, 0.7fr)"
+            alignItems="center"
+            gap={2}
+            display="flex"
+            w="full"
+            justifyContent={isSmallScreen ? 'center' : 'flex-end'}
+            mt={isSmallScreen ? '5px' : '0px'}
+          >
             <Link href="/"><FaWhatsapp color="#fff" size={mediasSize} /></Link>
             <Link href="/"><FaFacebookSquare color="#fff" size={mediasSize} /></Link>
             <Link href="/"><FiMail color="#fff" size={mediasSize} /></Link>
